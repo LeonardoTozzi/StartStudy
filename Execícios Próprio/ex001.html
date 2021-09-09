@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        font: normal 20pt Arial;
+            
+        }
+
+    
+    </style>
+</head>
+<body>
+    <script>
+        window.alert('Responder questionário')
+        var nome = (window.prompt('Digite seu nome.'))
+        var idade = Number(window.prompt('Digite sua iadde.'))
+        var CEP = Number(window.prompt('Digite seu CEP.'))
+        var salário = Number(window.prompt('Digite seu salário.'))
+        document.write(`Olá ${nome} você tem ${idade} anos seu CEP é ${CEP}.<br/>`)
+        document.write(`Seu nome em Maiúscula é <strong>${nome.toUpperCase()}</strong>.<br/>`)
+        document.write(`Seu nome em minúscula é <strong>${nome.toLowerCase()}</strong>.<br/>`)
+        document.write(`Seu nome tem <strong>${nome.length}</strong> letras.<br/>`)
+        document.write(`Seu salário é de ${salário.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br/>`)
+        
+        
+        
+    </script>
+    
+</body>
+</html>
